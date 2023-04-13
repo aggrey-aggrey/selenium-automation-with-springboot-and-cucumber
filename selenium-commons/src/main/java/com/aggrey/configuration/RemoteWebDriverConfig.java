@@ -1,5 +1,6 @@
 package com.aggrey.configuration;
 
+import com.aggrey.annotations.LazyConfiguration;
 import com.aggrey.annotations.WebDriverScopeBean;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,9 +11,13 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 
 import java.net.URL;
 
+
+@Profile("grid")
+@LazyConfiguration
 public class RemoteWebDriverConfig {
 
     @Value("${selenium.grid.url}")
