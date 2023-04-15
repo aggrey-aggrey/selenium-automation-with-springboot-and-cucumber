@@ -14,6 +14,11 @@ import java.time.Duration;
 
 @LazyConfiguration
 public class WebDriverWaitConfig {
+    /** This class is for auto-wiring the WebdriverWait instance in the tests.
+     *  The default timeout duration is set as 30 seconds, and for parallel test execution,
+     *  the bean is annotated with @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE).
+     *  A bean with the prototype scope will return a different instance every time it is requested from the container.
+     */
 
     @Value("${default.timeout:30}")
     private int timeout;

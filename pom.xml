@@ -17,6 +17,7 @@
     <modules>
         <module>selenium-commons</module>
         <module>selenium-commons</module>
+        <module>booking-com-ui</module>
     </modules>
     <properties>
         <java.version>17</java.version>

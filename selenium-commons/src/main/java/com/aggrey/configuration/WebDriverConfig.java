@@ -18,6 +18,20 @@ import org.springframework.context.annotation.Profile;
 @Profile("!grid")
 @LazyConfiguration
 public class WebDriverConfig {
+
+    /**
+     *
+     *@Profile(“!grid”) tells us that this configuration works when the profile is not the grid.
+     *
+     * @WebdriverScopeBean is for parallel test execution.
+     *
+     * @ConditionalOnProperty annotation helps us use the specific beans based on the properties in the configuration properties file
+     * which is application.properties in the resource folder.
+     *
+     * @Primary annotation gives a higher preference to a bean when there are multiple beans of the same type.
+     *
+     * @ConditionalMissingBean annotation lets a bean be included based on the absence of specific beans.
+     **/
     @WebDriverScopeBean
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver firefoxDriver(){

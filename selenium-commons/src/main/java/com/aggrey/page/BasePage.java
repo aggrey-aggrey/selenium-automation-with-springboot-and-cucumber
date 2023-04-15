@@ -12,7 +12,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 public abstract class BasePage {
-
+    /**
+     *This is the base class for all pages, and all pages extend the BasePage class. Here I autowired the WebDriver,
+     * WebDriverWait, JavascripExecutor, LogUtil classes and in this way, I can use the instances of these classes.
+     * Also, with @PostConstruct annotation after the creation of this page,
+     * I initiated the elements with “PageFactory.initElements(this.driver, this);” this line for PageFactory usage.
+     *
+     */
     @Autowired
     protected WebDriver driver;
 

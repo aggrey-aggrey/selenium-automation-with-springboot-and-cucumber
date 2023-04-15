@@ -7,6 +7,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class WebDriverScopeConfig {
+    /**
+     * WebDriverScopeConfig a configuration class, and
+     * it creates the WebdriverScopePostProcessor bean.
+     *
+     */
     @Bean
     public static BeanFactoryPostProcessor beanFactoryPostProcessor(){
         return new WebDriverScopePostProcessor();
