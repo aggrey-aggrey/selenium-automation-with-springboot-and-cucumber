@@ -1,5 +1,6 @@
-package com.aggrey.page;
+package com.aggrey.base;
 
+import com.aggrey.utils.LogUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,8 +29,8 @@ public abstract class BasePage {
     @Autowired
     protected JavascriptExecutor javascriptExecutor;
 
-    //@Autowired
-    //protected LogUtil logUtil;;
+    @Autowired
+    protected LogUtil logUtil;;
 
     private  void init(){
         PageFactory.initElements(this.driver, this);

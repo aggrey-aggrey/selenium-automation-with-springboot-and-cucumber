@@ -1,6 +1,7 @@
-package com.aggrey.page;
+package com.aggrey.pages;
 
-import com.aggrey.page.BasePage;
+
+import com.aggrey.base.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -40,5 +41,10 @@ public class HomePage extends BasePage {
     @Override
     public boolean isAt() {
         return  this.wait.until((driver) -> this.signInBtn.isDisplayed());
+    }
+
+    public HomePage goToLoginPage() {
+        click(signInBtn);
+        return this;
     }
 }

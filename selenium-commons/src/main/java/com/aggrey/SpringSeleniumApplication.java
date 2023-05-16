@@ -1,7 +1,9 @@
 package com.aggrey;
 
+import org.springframework.boot.SpringApplication;
+
 public class SpringSeleniumApplication {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SpringApplication.run(SpringSeleniumApplication.class);
     }
 }

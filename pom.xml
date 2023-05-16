@@ -16,7 +16,6 @@
     <description>selenium ui automation implementation with springboot</description>
     <modules>
         <module>selenium-commons</module>
-        <module>selenium-commons</module>
         <module>booking-com-ui</module>
     </modules>
     <properties>
@@ -51,11 +50,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
+
         <!--Selenium-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>

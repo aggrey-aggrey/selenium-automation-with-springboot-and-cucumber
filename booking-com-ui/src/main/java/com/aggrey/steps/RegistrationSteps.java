@@ -1,2 +1,4 @@
-package com.aggrey.steps;public class RegistrationSteps {
+package com.aggrey.steps;
+
+public class RegistrationSteps {
 }
