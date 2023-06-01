@@ -1,5 +1,6 @@
-import com.aggrey.annotations.LazyAutowired;
-import com.aggrey.steps.LoginSteps;
+
+import com.aggrey.booking.ui.steps.LoginSteps;
+import com.aggrey.selenium.core.annotations.LazyAutowired;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;

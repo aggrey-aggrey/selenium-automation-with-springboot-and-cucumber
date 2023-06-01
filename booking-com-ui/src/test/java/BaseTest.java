@@ -1,5 +1,6 @@
-import com.aggrey.annotations.LazyAutowired;
-import com.aggrey.annotations.SeleniumTest;
+
+import com.aggrey.selenium.core.annotations.LazyAutowired;
+import com.aggrey.selenium.core.annotations.SeleniumTest;
 import lombok.Getter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.platform.commons.logging.Logger;
